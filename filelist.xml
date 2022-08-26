@@ -1,14 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Indigo project" modversion="1.0.4" corepackage="False" steamworkshopid="2853726750" gameversion="0.18.15.1" expectedhash="4368A59743413002BEA4B3306E5A0FF8">
-  <Item file="%ModDir%/Content/items/Jobgear/Captain/Uniform_new.xml" />
-  <Other file="%ModDir%/Content/items/Jobgear/Captain/AK12.png" />
-  <Other file="%ModDir%/Content/items/Jobgear/Captain/AN94.png" />
-  <Text file="%ModDir%/Content/items/Jobgear/Captain/AK12.xml" />
-  <Text file="%ModDir%/Content/items/Jobgear/Captain/AN94.xml" />
-  <Other file="%ModDir%/Content/items/Jobgear/Captain/DSR50.png" />
-  <Text file="%ModDir%/Content/items/Jobgear/Captain/DSR50.xml" />
-  <Other file="%ModDir%/Content/items/Jobgear/Captain/SASS.png" />
-  <Text file="%ModDir%/Content/items/Jobgear/Captain/SASS.xml" />
-  <Other file="%ModDir%/Content/items/Jobgear/Captain/WZJK.png" />
-  <Text file="%ModDir%/Content/items/Jobgear/Captain/WZJK.xml" />
+<contentpackage name="Indigo project" modversion="1.0.4" corepackage="False" steamworkshopid="2853726750" gameversion="0.18.15.1">
+  <!-- clothings added -->
+  <Item file="%ModDir%/Content/Clothing/Uniform_new.xml" />
+  <!-- AK12 -->
+  <Other file="%ModDir%/Content/Clothing/AK12.png" />
+  <Text file="%ModDir%/Content/Clothing/AK12_desc_sc.xml" />
+  <!-- AN94 -->
+  <Other file="%ModDir%/Content/Clothing/AN94.png" />
+  <Text file="%ModDir%/Content/Clothing/AN94_desc_sc.xml" />
+  <!-- DSR50 -->
+  <Other file="%ModDir%/Content/Clothing/DSR50.png" />
+  <Text file="%ModDir%/Content/Clothing/DSR50_desc_sc.xml" />
+  <!-- SASS -->
+  <Other file="%ModDir%/Content/Clothing/SASS.png" />
+  <Text file="%ModDir%/Content/Clothing/SASS_desc_sc.xml" />
+  <!-- WZJK -->
+  <Other file="%ModDir%/Content/Clothing/WZJK.png" />
+  <Text file="%ModDir%/Content/Clothing/WZJK_desc_sc.xml" />
 </contentpackage>
