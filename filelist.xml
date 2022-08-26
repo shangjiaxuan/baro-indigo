@@ -1,20 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <contentpackage name="Indigo project" modversion="1.0.4" corepackage="False" steamworkshopid="2853726750" gameversion="0.18.15.1">
-  <!-- clothings added -->
-  <Item file="%ModDir%/Content/Clothing/Uniform_new.xml" />
+  <!-- Clothings -->
   <!-- AK12 -->
+  <Item file="%ModDir%/Content/Clothing/AK12.xml"/>
   <Other file="%ModDir%/Content/Clothing/AK12.png" />
   <Text file="%ModDir%/Content/Clothing/AK12_desc_sc.xml" />
   <!-- AN94 -->
+  <Item file="%ModDir%/Content/Clothing/AN94.xml"/>
   <Other file="%ModDir%/Content/Clothing/AN94.png" />
   <Text file="%ModDir%/Content/Clothing/AN94_desc_sc.xml" />
   <!-- DSR50 -->
+  <Item file="%ModDir%/Content/Clothing/DSR50.xml"/>
   <Other file="%ModDir%/Content/Clothing/DSR50.png" />
   <Text file="%ModDir%/Content/Clothing/DSR50_desc_sc.xml" />
   <!-- SASS -->
+  <Item file="%ModDir%/Content/Clothing/SASS.xml"/>
   <Other file="%ModDir%/Content/Clothing/SASS.png" />
   <Text file="%ModDir%/Content/Clothing/SASS_desc_sc.xml" />
   <!-- WZJK -->
+  <Item file="%ModDir%/Content/Clothing/WZJK.xml"/>
   <Other file="%ModDir%/Content/Clothing/WZJK.png" />
   <Text file="%ModDir%/Content/Clothing/WZJK_desc_sc.xml" />
 </contentpackage>
