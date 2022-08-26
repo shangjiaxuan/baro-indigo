@@ -2,32 +2,50 @@
 <Items>
   <Item name="" identifier="AK12" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="crewcab" />
-    <Price baseprice="350">
+    <!-- outpost merchants -->
+    <Price baseprice="350" sold="true">
       <Price storeidentifier="merchantoutpost" minavailable="1" />
       <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
       <Price storeidentifier="merchantresearch" minavailable="1" />
       <Price storeidentifier="merchantmilitary" minavailable="1" />
       <Price storeidentifier="merchantmine" minavailable="1" />
     </Price>
-    <Deconstruct time="10" />
+    <!-- Uncomment here if needs to be fabricated, can have multiple recipe...
+    <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="true">
+      <RequiredSkill identifier="electrical" level="35" />
+      <RequiredItem identifier="fuelrod" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    -->
+    <Deconstruct time="10">
+      <!-- Uncomment here if deconstructing can yield things.
+      <Item identifier="steel" />
+      -->
+    </Deconstruct>
+    <!-- The looks of it in inventory -->
     <InventoryIcon name="AK12 Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,27,128,101" origin="0.5,0.5" />
+    <!-- The looks of it on the ground -->
     <Sprite name="AK12" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="247,209,125,77" depth="0.6" origin="0.5,0.5" />
+    <!-- physics as an item on ground -->
     <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
+    <!-- used when it is worn -->
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Captain's Uniform 1 Torso" texture="AK12.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Right Hand" texture="AK12.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Left Hand" texture="AK12.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Right Lower Arm" texture="AK12.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Left Lower Arm" texture="AK12.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Right Upper Arm" texture="AK12.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Left Upper Arm" texture="AK12.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Waist" texture="AK12.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Right Thigh" texture="AK12.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Left Thigh" texture="AK12.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Right Leg" texture="AK12.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Left Leg" texture="AK12.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Left Shoe" texture="AK12.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Right Shoe" texture="AK12.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <!-- the looks -->
+      <sprite name="AK12 Uniform Torso" texture="AK12.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="AK12 Uniform Right Hand" texture="AK12.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="AK12 Uniform Left Hand" texture="AK12.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="AK12 Uniform Right Lower Arm" texture="AK12.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="AK12 Uniform Left Lower Arm" texture="AK12.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="AK12 Uniform Right Upper Arm" texture="AK12.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="AK12 Uniform Left Upper Arm" texture="AK12.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="AK12 Uniform Waist" texture="AK12.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="AK12 Uniform Right Thigh" texture="AK12.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="AK12 Uniform Left Thigh" texture="AK12.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="AK12 Uniform Right Leg" texture="AK12.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="AK12 Uniform Left Leg" texture="AK12.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="AK12 Uniform Left Shoe" texture="AK12.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="AK12 Uniform Right Shoe" texture="AK12.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <!-- the effects -->
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
     </Wearable>
   </Item>

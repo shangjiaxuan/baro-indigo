@@ -2,32 +2,50 @@
 <Items>
   <Item name="" identifier="WZJK" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="crewcab" />
-    <Price baseprice="350">
-      <Price storeidentifier="merchantoutpost" minavailable="1" />
-      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
-      <Price storeidentifier="merchantresearch" minavailable="1" />
-      <Price storeidentifier="merchantmilitary" minavailable="1" />
-      <Price storeidentifier="merchantmine" minavailable="1" />
+    <!-- outpost merchants -->
+    <Price baseprice="350" sold="true">
+        <Price storeidentifier="merchantoutpost" minavailable="1" />
+        <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+        <Price storeidentifier="merchantresearch" minavailable="1" />
+        <Price storeidentifier="merchantmilitary" minavailable="1" />
+        <Price storeidentifier="merchantmine" minavailable="1" />
     </Price>
-    <Deconstruct time="10" />
+    <!-- Uncomment here if needs to be fabricated, can have multiple recipe...
+    <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="true">
+      <RequiredSkill identifier="electrical" level="35" />
+      <RequiredItem identifier="fuelrod" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+        <RequiredItem identifier="steel" />
+      </Fabricate>
+    -->
+    <Deconstruct time="10">
+      <!-- Uncomment here if deconstructing can yield things.
+      <Item identifier="steel" />
+      -->
+    </Deconstruct>
+    <!-- The looks of it in inventory -->
     <InventoryIcon name="WZJK Icon" texture="Content/Items/Jobgear/OutfitIcons.png" sourcerect="0,27,128,101" origin="0.5,0.5" />
+    <!-- The looks of it on the ground -->
     <Sprite name="WZJK" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="247,209,125,77" depth="0.6" origin="0.5,0.5" />
+    <!-- physics as an item on ground -->
     <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
+    <!-- used when it is worn -->
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Captain's Uniform 1 Torso" texture="WZJK.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Right Hand" texture="WZJK.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Left Hand" texture="WZJK.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Right Lower Arm" texture="WZJK.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Left Lower Arm" texture="WZJK.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Right Upper Arm" texture="WZJK.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Left Upper Arm" texture="WZJK.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Waist" texture="WZJK.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Right Thigh" texture="WZJK.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Left Thigh" texture="WZJK.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Right Leg" texture="WZJK.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Left Leg" texture="WZJK.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Left Shoe" texture="WZJK.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Captain's Uniform 1 Right Shoe" texture="WZJK.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <!-- the looks -->
+      <sprite name="WZJK Uniform Torso" texture="WZJK.png" limb="Torso" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="WZJK Uniform Right Hand" texture="WZJK.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="WZJK Uniform Left Hand" texture="WZJK.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="WZJK Uniform Right Lower Arm" texture="WZJK.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="WZJK Uniform Left Lower Arm" texture="WZJK.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="WZJK Uniform Right Upper Arm" texture="WZJK.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="WZJK Uniform Left Upper Arm" texture="WZJK.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="WZJK Uniform Waist" texture="WZJK.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="WZJK Uniform Right Thigh" texture="WZJK.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="WZJK Uniform Left Thigh" texture="WZJK.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="WZJK Uniform Right Leg" texture="WZJK.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="WZJK Uniform Left Leg" texture="WZJK.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="WZJK Uniform Left Shoe" texture="WZJK.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="WZJK Uniform Right Shoe" texture="WZJK.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <!-- the effects -->
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
     </Wearable>
   </Item>
