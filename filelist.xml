@@ -5,20 +5,25 @@
   <Item file="%ModDir%/Content/Clothing/AK12.xml"/>
   <Other file="%ModDir%/Content/Clothing/AK12.png" />
   <Text file="%ModDir%/Content/Clothing/AK12_desc_sc.xml" />
+  <Text file="%ModDir%/Content/Clothing/AK12_desc_en.xml" />
   <!-- AN94 -->
   <Item file="%ModDir%/Content/Clothing/AN94.xml"/>
   <Other file="%ModDir%/Content/Clothing/AN94.png" />
   <Text file="%ModDir%/Content/Clothing/AN94_desc_sc.xml" />
+  <Text file="%ModDir%/Content/Clothing/AN94_desc_en.xml" />
   <!-- DSR50 -->
   <Item file="%ModDir%/Content/Clothing/DSR50.xml"/>
   <Other file="%ModDir%/Content/Clothing/DSR50.png" />
   <Text file="%ModDir%/Content/Clothing/DSR50_desc_sc.xml" />
+  <Text file="%ModDir%/Content/Clothing/DSR50_desc_en.xml" />
   <!-- SASS -->
   <Item file="%ModDir%/Content/Clothing/SASS.xml"/>
   <Other file="%ModDir%/Content/Clothing/SASS.png" />
   <Text file="%ModDir%/Content/Clothing/SASS_desc_sc.xml" />
+  <Text file="%ModDir%/Content/Clothing/SASS_desc_en.xml" />
   <!-- WZJK -->
   <Item file="%ModDir%/Content/Clothing/WZJK.xml"/>
   <Other file="%ModDir%/Content/Clothing/WZJK.png" />
   <Text file="%ModDir%/Content/Clothing/WZJK_desc_sc.xml" />
+  <Text file="%ModDir%/Content/Clothing/WZJK_desc_en.xml" />
 </contentpackage>
