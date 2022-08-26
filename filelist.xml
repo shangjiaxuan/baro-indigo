@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Indigo project" modversion="1.0.4" corepackage="False" steamworkshopid="2853726750" gameversion="0.18.15.1" expectedhash="4368A59743413002BEA4B3306E5A0FF8">
+  <Item file="%ModDir%/Content/items/Jobgear/Captain/Uniform_new.xml" />
+  <Other file="%ModDir%/Content/items/Jobgear/Captain/AK12.png" />
+  <Other file="%ModDir%/Content/items/Jobgear/Captain/AN94.png" />
+  <Text file="%ModDir%/Content/items/Jobgear/Captain/AK12.xml" />
+  <Text file="%ModDir%/Content/items/Jobgear/Captain/AN94.xml" />
+  <Other file="%ModDir%/Content/items/Jobgear/Captain/DSR50.png" />
+  <Text file="%ModDir%/Content/items/Jobgear/Captain/DSR50.xml" />
+  <Other file="%ModDir%/Content/items/Jobgear/Captain/SASS.png" />
+  <Text file="%ModDir%/Content/items/Jobgear/Captain/SASS.xml" />
+  <Other file="%ModDir%/Content/items/Jobgear/Captain/WZJK.png" />
+  <Text file="%ModDir%/Content/items/Jobgear/Captain/WZJK.xml" />
+</contentpackage>
